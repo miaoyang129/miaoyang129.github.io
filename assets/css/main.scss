@@ -42,29 +42,35 @@
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap');
+
 /* 设置全局字体 */
 body {
-    font-family: 'Noto Sans SC', sans-serif;
-    font-size: 14px; /* 调整为较小的全局字号 */
-    line-height: 1.5; /* 行高设置，可以根据需要调整 */
-  }
-  
-  /* 设置标题的字体和大小 */
-  h1 {
-    font-size: 24px; /* 调整为较小的标题字号 */
-  }
-  h2 {
-    font-size: 20px; /* 调整为较小的标题字号 */
-  }
-  h3 {
-    font-size: 18px; /* 调整为较小的标题字号 */
-  }
-  h4, h5, h6 {
-    font-size: 16px; /* 调整为较小的标题字号 */
-  }
-  
-  /* 设置段落的字体和大小 */
-  p {
-    font-family: 'Georgia', serif;
-    font-size: 14px; /* 调整为较小的段落字号 */
-  }
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 14px; /* 调整为较小的全局字号 */
+  line-height: 1.5; /* 行高设置，可以根据需要调整 */
+}
+
+/* 设置标题的字体和大小 */
+h1 {
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 24px; /* 调整为较小的标题字号 */
+}
+h2 {
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 20px; /* 调整为较小的标题字号 */
+}
+h3 {
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 18px; /* 调整为较小的标题字号 */
+}
+h4, h5, h6 {
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 16px; /* 调整为较小的标题字号 */
+}
+
+/* 设置段落的字体和大小 */
+p {
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 14px; /* 调整为较小的段落字号 */
+}
