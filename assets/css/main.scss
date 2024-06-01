@@ -10,8 +10,7 @@
  *
 */
 
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap'); // import jetbrains mono font
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap');
 
 @import "vendor/breakpoint/breakpoint"; // media query mixins
 @import "variables";
@@ -43,7 +42,17 @@
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
 
+/* 设置全局字体 */
 body {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: 'Noto Sans SC', sans-serif;
   }
   
+  /* 设置标题的字体 */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Noto Sans SC', sans-serif;
+  }
+  
+  /* 设置段落的字体 */
+  p {
+    font-family: 'Georgia', serif;
+  }
