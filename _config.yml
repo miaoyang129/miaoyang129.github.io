@@ -8,15 +8,21 @@ highlighter:         rouge
 exclude:             ['*.sublime-*', 'README.md', 'LICENSE', 'Gemfile', 'Gemfile.lock', 'vendor/bundle']
 
 permalink:           pretty
+
+# Blog pagination
 paginate:            5
 paginate_path:       /blog/:num
+
+# Docs pagination
+docs_paginate:       5
+docs_paginate_path:  /docs/page:num
 
 blog:
   truncated_preview: false
 
 sass:
   sass_dir:          _sass
-  style:             :compressed
+  style:             "compressed"
 
 author:
   name:              Miao Yang
@@ -27,3 +33,4 @@ plugins:
   - jekyll-coffeescript
   - jekyll-paginate
   - jekyll-gist
+  - jekyll-paginate-v2
