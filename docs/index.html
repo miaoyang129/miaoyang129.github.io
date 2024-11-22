@@ -12,8 +12,16 @@ title: Docs
         {{ doc.title }}
       </a>
     </h1>
+
     {% if doc.description %}
       <p class="doc-description">{{ doc.description }}</p>
+    {% endif %}
+
+    {% if site.docs.truncated_preview %}
+      {{ doc.excerpt }}
+      <a href="{{ site.baseurl }}{{ doc.url }}">Read more</a>
+    {% else %}
+      {{ doc.content }}
     {% endif %}
   </article>
   {% endfor %}
