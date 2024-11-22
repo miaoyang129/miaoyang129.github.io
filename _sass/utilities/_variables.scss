@@ -11,30 +11,30 @@ $font-size-mobile: 15px;
 $code-font-stack: 'Source Code Pro', monospace;
 
 // Body
-$body-text-color: #515151;
+$body-text-color: #4a4a4a; // Slightly darker than original
 $body-background-color: #ffffff;
-$body-top-border-color: #0A3b76;
+$body-top-border-color: #8c1a11; // Updated to match new theme color
 $body-top-border-width: 5px;
 
 // Links
-$link-color: #5a81b0;
+$link-color: #b05a5a; // Adjusted to match the new theme color
 
 // Navigation
-$nav-bottom-border-color: #c0c0c0;
+$nav-bottom-border-color: #b0b0b0; // Slightly darker than original
 $nav-bottom-border-width: 1px;
 
-$nav-link-color: #263663;
+$nav-link-color: #5a2626; // Adjusted to match the new theme color
 $nav-link-padding-y: 0.7rem;
 $nav-link-padding-x: 1.5rem;
-$nav-link-underline-color: #2098d1;
+$nav-link-underline-color: #d12020; // Adjusted to match the new theme color
 
 $nav-icon-color: #ffffff;
-$nav-icon-background-color: #0A3b76;
+$nav-icon-background-color: #8c1a11; // Updated to match new theme color
 
 // Blog post headings and page titles
-$post-title-color: #0A3b76;
-$post-date-color: #9a9a9a;
+$post-title-color: #8c1a11; // Updated to new theme color
+$post-date-color: #7a7a7a; // Slightly darker than original
 
 // Message box
-$message-color: #717171;
+$message-color: #616161; // Slightly darker than original
 $message-background-color: #f9f9f9;
