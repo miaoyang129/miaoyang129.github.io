@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Contact
+title: Documentation
 ---
 
 Email: yangmiao23@mails.tsinghua.edu.cn
