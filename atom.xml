@@ -15,6 +15,7 @@ layout: null
    <email>{{ site.author.email }}</email>
  </author>
 
+ <!-- Blog posts -->
  {% for post in site.posts %}
  <entry>
    <title>{{ post.title }}</title>
@@ -22,6 +23,21 @@ layout: null
    <updated>{{ post.date | date_to_xmlschema }}</updated>
    <id>{{ site.url }}{{ post.id }}</id>
    <content type="html">{{ post.content | xml_escape }}</content>
+ </entry>
+ {% endfor %}
+
+ <!-- Documentation -->
+ {% for doc in site.docs %}
+ <entry>
+   <title>{{ doc.title }}</title>
+   <link href="{{ site.url }}{{ site.baseurl }}{{ doc.url }}"/>
+   {% if doc.date %}
+   <updated>{{ doc.date | date_to_xmlschema }}</updated>
+   {% else %}
+   <updated>{{ site.time | date_to_xmlschema }}</updated>
+   {% endif %}
+   <id>{{ site.url }}{{ doc.id }}</id>
+   <content type="html">{{ doc.content | xml_escape }}</content>
  </entry>
  {% endfor %}
 

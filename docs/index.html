@@ -13,6 +13,11 @@ title: Docs
       </a>
     </h1>
 
+    <!-- 添加日期显示 -->
+    {% if doc.date %}
+    <time datetime="{{ doc.date | date_to_xmlschema }}" class="doc-date">{{ doc.date | date_to_string }}</time>
+    {% endif %}
+
     {% if doc.description %}
       <p class="doc-description">{{ doc.description }}</p>
     {% endif %}
