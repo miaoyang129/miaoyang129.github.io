@@ -1,5 +1,5 @@
 ---
-layout: docs
+layout: doc
 title: Processing GF & ZY Satellite Data
 ---
 

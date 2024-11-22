@@ -1,0 +1,9 @@
+---
+layout: default
+---
+
+<article class="doc">
+  <h1 class="doc-title">{{ page.title }}</h1>
+  <time datetime="{{ page.date | date_to_xmlschema }}" class="doc-date">{{ page.date | date_to_string }}</time>
+  {{ content }}
+</article>
