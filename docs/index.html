@@ -4,51 +4,17 @@ title: Docs
 ---
 
 <div class="docs">
-  {% assign docs = site.pages | where: "layout", "doc" %}
-  {% for doc in docs %}
+  {% assign sorted_docs = site.docs | sort: "order" %}
+  {% for doc in sorted_docs %}
   <article class="doc">
     <h1 class="doc-title">
       <a href="{{ site.baseurl }}{{ doc.url }}">
         {{ doc.title }}
       </a>
     </h1>
-
-    <time datetime="{{ doc.date | date_to_xmlschema }}" class="doc-date">{{ doc.date | date_to_string }}</time>
-
-    {% if doc.truncated_preview == true or site.docs.truncated_preview and doc.truncated_preview != false %}
-      {{ doc.excerpt }}
-      <a href="{{ site.baseurl }}{{ doc.url }}">Read more</a>
-    {% else %}
-      {{ doc.content }}
+    {% if doc.description %}
+      <p class="doc-description">{{ doc.description }}</p>
     {% endif %}
   </article>
   {% endfor %}
-</div>
-
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item" href="{{ paginator.next_page_path | prepend: site.baseurl }}">
-      <i class="fa fa-arrow-circle-o-left"></i> 
-      <span class="pagination-text">older docs</span>
-    </a>
-  {% else %}
-    <span class="pagination-item">
-      <i class="fa fa-arrow-circle-o-left"></i> 
-      <span class="pagination-text">older docs</span>
-    </span>
-  {% endif %}
-
-  <!-- <a class="pagination-item" href="#">archive</a> -->
-
-  {% if paginator.previous_page %}
-    <a class="pagination-item" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">
-      <span class="pagination-text">newer docs</span> 
-      <i class="fa fa-arrow-circle-o-right"></i>
-    </a>
-  {% else %}
-    <span class="pagination-item">
-      <span class="pagination-text">newer docs</span> 
-      <i class="fa fa-arrow-circle-o-right"></i>
-    </span>
-  {% endif %}
 </div>

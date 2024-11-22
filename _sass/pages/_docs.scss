@@ -1,0 +1,41 @@
+/**
+  * _docs.scss
+  * Each doc is wrapped in `.doc`. The style maintains consistency
+  * with the post styling while adding doc-specific features.
+  */
+
+  .doc {
+    margin-bottom: 4em;
+  }
+  
+  // Doc title
+  .doc-title,
+  .doc-title a {
+    color: $post-title-color;  // 复用文章标题颜色，或定义新的 $doc-title-color
+  }
+  
+  .doc-title {
+    margin-top: 0;
+  }
+  
+  // Doc description if needed
+  .doc-description {
+    margin-top: -.5rem;
+    margin-bottom: 1rem;
+    color: $post-date-color;  // 复用日期颜色，或定义新的 $doc-description-color
+  }
+  
+  // Doc category/section if needed
+  .doc-category {
+    display: inline-block;
+    padding: .2rem .5rem;
+    margin-bottom: 1rem;
+    font-size: 85%;
+    background: #f8f9fa;
+    border-radius: 3px;
+  }
+  
+  // Doc container
+  .docs {
+    margin-bottom: 2em;
+  }
