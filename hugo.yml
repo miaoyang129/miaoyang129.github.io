@@ -1,5 +1,5 @@
 baseURL: "https://miaoyang129.github.io/"
-title: Miao's Blog
+title: Miao Yang
 # paginate: 5
 theme: PaperMod
 
@@ -34,7 +34,7 @@ params:
   UseHugoToc: true
   disableSpecial1stPost: false
   disableScrollToTop: false
-  comments: false
+  comments: true
   hidemeta: false
   hideSummary: false
   showtoc: true
@@ -79,12 +79,13 @@ params:
   socialIcons:
     # - name: x
     #   url: "https://x.com/"
-    - name: xhs
-      url: "https://www.xiaohongshu.com/user/profile/6766d7a0000000001801515d"
     - name: github
       url: "https://github.com/miaoyang129"
     - name: email
       url: "mailto:miaoyang129@gmail.com"
+    - name: XHS
+      url: "https://www.xiaohongshu.com/user/profile/6766d7a0000000001801515d"
+    
 
   # analytics:
   #   google:
@@ -99,10 +100,10 @@ params:
     hiddenInList: true # hide on list pages and home
     hiddenInSingle: true # hide on single page
 
-  editPost:
-    URL: "https://github.com/miaoyang129/miaoyang129.github.io/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
+  # editPost:
+  #   URL: "https://github.com/miaoyang129/miaoyang129.github.io/content"
+  #   Text: "Suggest Changes" # edit text
+  #   appendFilePath: true # to append file path to Edit link
 
   # for search
   # https://fusejs.io/api/options.html
@@ -118,19 +119,19 @@ params:
 menu:
   main:
     - identifier: archives
-      name: 归档
+      name: Archives
       url: /archives/
       weight: 10
     - identifier: categories
-      name: 分类
+      name: Categories
       url: /categories/
       weight: 20
     - identifier: tags
-      name: 标签
+      name: Tags
       url: /tags/
       weight: 30
     - identifier: search
-      name: 搜索
+      name: Search
       url: /search/
       weight: 40
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
