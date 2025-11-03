@@ -1,5 +1,5 @@
 ---
-title: "Content Placeholder"
+title: "My first post (Test)"
 date: 2025-11-03
 draft: false
 ---
