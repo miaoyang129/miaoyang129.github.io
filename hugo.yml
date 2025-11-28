@@ -73,8 +73,8 @@ params:
 
   # home-info mode
   homeInfoParams:
-    Title: "Hi \U0001F44B I'm Miao Yang"
-    Content: You can also call me Aphobos. I'm currently a PhD student of Department of Earth System Science in Tsinghua University. I research on remote sensing image analyzing with deep learning methods.
+    Title: "Hi \U0001F44B I'm Miao Yang｜杨淼"
+    Content: I'm currently a PhD student of Department of Earth System Science in Tsinghua University. I research on remote sensing image analyzing with deep learning methods.
 
   socialIcons:
     # - name: x
