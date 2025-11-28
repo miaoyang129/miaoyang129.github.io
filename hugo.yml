@@ -82,9 +82,9 @@ params:
     - name: github
       url: "https://github.com/miaoyang129"
     - name: email
-      url: "mailto:miaoyang129@gmail.com"
-    - name: XHS
-      url: "https://www.xiaohongshu.com/user/profile/6766d7a0000000001801515d"
+      url: "mailto:yangmiao23@mails.tsinghua.edu.cn"
+    # - name: XHS
+    #   url: "https://www.xiaohongshu.com/user/profile/6766d7a0000000001801515d"
     
 
   # analytics:
